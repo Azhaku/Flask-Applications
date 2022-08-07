@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <p><br>
+        {% if lengths >=1 %}
+            <h2>{{ lengths }} Match Found..</h2>
+            <p><h2>Here is the matches: </h2><br>
+                {% for i in words %}
+                    {{ i }}</p>
+                {% endfor %}
+        {% else %}
+            <h1>No matches found</h1>
+        {% endif %} 
+        </p>
+</body>
+</html>
