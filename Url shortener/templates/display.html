@@ -1,0 +1,22 @@
+{% extends "layout.html" %} {% block title %} Display {% endblock %} {% block content %}
+<div class="maindisplay">
+    <div class="title">URL History</div>
+    <form action="">
+        <table>
+            <thead>
+                <th>Id</th>
+                <th>Long url</th>
+                <th>Short url</th>
+            </thead>
+            <tbody>{% for url in values %}
+                <tr>
+                    <td> {{ url.id }} </th>
+                        <td> {{ url.long_url }} </td>
+                        <td> {{ url.short_url }} </td><br>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </form>
+</div>
+{% endblock %}
