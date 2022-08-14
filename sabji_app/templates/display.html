@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Display page
+{% endblock %}
+
+{% block content %}
+<h3>All the available sabji's in data</h3>
+<ul>
+    {% for sabji in sabjis %}
+    <li> {{ sabji }} </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
